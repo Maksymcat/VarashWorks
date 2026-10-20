@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  --color-text: #182b46;
+  --color-muted: #4a5d75;
+  --color-brand: #174bc4;
+  --color-brand-hover: #10378f;
+  --color-surface: #f3f6fc;
+  --color-border: #d8e1ee;
+  --font-sans: "Segoe UI", "Noto Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-brand);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-brand-hover);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 5px;
+}
+
+::selection {
+  background: #dce7ff;
+}
+
+[id] {
+  scroll-margin-top: 2rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  transform: translateY(-200%);
+  border-radius: 0.5rem;
+  background: #fff;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

@@ -1,0 +1,17 @@
+.panel {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+}
+
+.panel p {
+  margin-block: 0.75rem;
+  color: var(--color-muted);
+}
+
+.results {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
