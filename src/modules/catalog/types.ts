@@ -3,4 +3,8 @@ export type Master = {
   slug: string;
   name: string;
   speciality: string;
+  categoryId: categoryId;
 };
+
+type categoryId =
+  "electric" | "plumbing" | "Різноробочий" | "painting" | "Збірник меблів";
