@@ -7,14 +7,13 @@ type MasterCardProps = {
   id: string;
 };
 export function MasterCard({ name, speciality, slug, id }: MasterCardProps) {
-  // TODO(навчання): покажи ім'я в заголовку й підключи адресу за slug.
   return (
     <article className={styles.panel}>
-      <h3>Заготовка картки</h3>
+      <h3> {name}</h3>
       <p>
-        {name} {speciality}, {slug} {id}
+        {speciality}, {slug} {id}
       </p>
-      <Link href="/masters/example">Відкрити заготовку профілю</Link>
+      <Link href={`/masters/${slug}`}>Відкрити заготовку профілю</Link>
     </article>
   );
 }
